@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>drag element with d3-drag</title>
+    <style>
+      .frame {
+        box-shadow: 0 0 10px #999999 inset;
+        height: 80px;
+        margin: 0 auto;
+        padding: 10px;
+        position: relative;
+        width: 600px;
+      }
+
+      .frame .bar {
+        background-color: blue;
+        height: 80px;
+        position: absolute;
+        width: 400px;
+      }
+
+      .percentage {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="js-frame" class="frame">
+      <div id="js-bar" class="bar"></div>
+    </div>
+
+    <p id="js-percentage" class="percentage">0%</p>
+
+    <script src="d3-dispatch.v1.min.js"></script>
+    <script src="d3-selection.v1.min.js"></script>
+    <script src="d3-drag.v1.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
